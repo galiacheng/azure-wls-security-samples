@@ -106,7 +106,7 @@ Then deploy the application to weblogic with the following steps:
 * Select "wlssecurity-1.0.0" and click Start, select "Servicing all requests"  
 
 ## Test with different users
-Now, let open the application with url http://<adminhost>:7001/welsecurity-1.0.0  
+Now, let open the application with url http://<adminhost>:7001/welsecurity-1.0.0, click "Login and go to welcome page"  
 A login dialog prompts, it's required user account to login the application.  
 Input "test" to "User Name", and input your new password set just now, the page will show  
 ```
@@ -115,3 +115,5 @@ Your role is webuser
 ```
 
 If this page does not show up, you need to check your AAD user and password, you can login azure portal with the user to make sure you has the correct password.
+
+If you input user from other group, you will fail to access welcome page.  
