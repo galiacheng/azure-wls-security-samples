@@ -1,3 +1,4 @@
+# Secure Java EE application with Basic Authentication using Weblogic Server AAD Proivder
 This article intoduces how to deploy a secure Java EE application to Weblogic server with basic authentication using Azure Active Directory (AAD) authentication provider.
 
 ## Prerequisites
