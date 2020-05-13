@@ -51,7 +51,7 @@ Now, we have granted AAD users in AAD group "wls-security" with role "webuser".
 The next steps is to secure Java application with role "webuser".  
 
 ## Configure Java EE application security
-We will limite access to the web application, only allow user with `webuser` role to login.  
+We will limit access to the web application, only allow user with `webuser` role to login.  
 We have to add security-constraint configuration to web.xml as following.  
 ```
 <security-constraint>
@@ -97,7 +97,7 @@ You will get wlssecurity-1.0.0.war in target folder.
 Then deploy the application to weblogic with the following steps:  
 * Go to Admin Server console portal, click "Lock & Edit" to deploy app  
 * Click "Deployments"  
-* Clik Install  
+* Click Install  
 * Click "Upload your file(s)"  
 * Select "wlssecurity-1.0.0.war" and upload
 * Click Next until Finish button is enable, and click "Finish"  
@@ -107,13 +107,13 @@ Then deploy the application to weblogic with the following steps:
 
 ## Test with different users
 Now, let open the application with url http://<adminhost>:7001/welsecurity-1.0.0, click "Login and go to welcome page"  
-A login dialog prompts, it's required user account to login the application.  
+A login dialog prompts, it requires user account to login the application.  
 Input "test" to "User Name", and input your new password set just now, the page will show  
 ```
 Welcome test
 Your role is webuser
 ```
 
-If this page does not show up, you need to check your AAD user and password, you can login azure portal with the user to make sure you has the correct password.
+If this page does not show up, you need to check your AAD user and password, you can login azure portal with the user to make sure you have the correct password.
 
 If you input user from other group, you will fail to access welcome page.  
