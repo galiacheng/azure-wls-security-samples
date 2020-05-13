@@ -3,6 +3,6 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <security-role-assignment>
         <role-name>webuser</role-name>
-        <principal-name>aad-webuser</principal-name>
+        <principal-name>wls-security</principal-name>
     </security-role-assignment>
 </weblogic-web-app>
