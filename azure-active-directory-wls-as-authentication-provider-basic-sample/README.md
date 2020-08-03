@@ -8,7 +8,7 @@ This article intoduces how to deploy a secure Java EE application to Weblogic se
 * Set up [WebLogic Server that has integrated Azure Active Directory](https://portal.azure.com/#create/oracle.20191009-arm-oraclelinux-wls-admin-preview20191009-arm-oraclelinux-wls-admin)  
 
 ## Create secure roles
-We will only allow users with `webuser` role to access the application.  
+We will allow users with `webuser` role to access the application.  
 We will set up role named webuser to secure Java EE applciation, granting users from AAD group "wls-security" with the role.  
 Firstly, create group name `wls-security` in AAD and add user to the group.  
 * Go to azure portal https://ms.portal.azure.com and login.  
