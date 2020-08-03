@@ -58,7 +58,7 @@ We have to add security-constraint configuration to web.xml as following.
         <role-name>webuser</role-name>
     </security-role>
 ```
-Besides, we need to configure weblogic as following:  
+Besides, we need to configure weblogic as following, mapping `wls-security` to role `webuser`:  
 ```
 <?xml version='1.0' encoding='UTF-8'?>
 <weblogic-web-app xmlns="http://www.bea.com/ns/weblogic/90" 
