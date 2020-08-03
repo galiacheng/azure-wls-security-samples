@@ -33,23 +33,7 @@ Continue the steps:
 * Login azure with the account saved just now (e.g. test@helloaad0512outlook.onmicrosoft.com/password), azure will prompt a page to ask you to input new password, input your new password to reset password.  
 
 Secondly, make sure Azure Active Directory is accessible from weblogic server, you will find users from AD provider in this page.  
-![Weblogic Users](src/resources/weblogic-users.PNG)  
-
-Then create role in WebLoigc Server.
-* Go to WebLogic Server console portal.  
-* Click Security Realms -> myrealm -> Roles and Policies  
-* Expand "Global Roles"  
-* Click "Roles"  
-* Click "New"  
-* Specify "Name" with `webuser`  
-* Click OK  
-* Click "webuser" in role list  
-* Click "Add Conditions"  
-* Select "Predicate list" with "Group", click Next  
-* Input AAD group "wls-security", and click "Add"  
-* Click Finish, Click Save.  
-Now, we have granted AAD users in AAD group "wls-security" with role "webuser".  
-The next steps is to secure Java application with role "webuser".  
+![Weblogic Users](src/resources/weblogic-users.PNG) 
 
 ## Configure Java EE application security
 We will limit access to the web application, only allow user with `webuser` role to login.  
