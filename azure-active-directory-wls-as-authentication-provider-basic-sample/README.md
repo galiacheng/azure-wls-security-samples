@@ -107,7 +107,7 @@ Then deploy the application to weblogic with the following steps:
 * Select "wlssecurity-1.0.0" and click Start, select "Servicing all requests"  
 
 ## Test with different users
-Now, let open the application with url http://<adminhost>:7001/welsecurity-1.0.0, click "Login and go to welcome page"  
+Now, let open the application with url http://adminhost:7001/welsecurity-1.0.0, click "Login and go to welcome page"  
 A login dialog prompts, it requires user account to login the application.  
 Input "test" to "User Name", and input your new password set just now, the page will show  
 ```
